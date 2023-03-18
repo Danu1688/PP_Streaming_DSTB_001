@@ -1,1 +1,14 @@
-
+proxies:
+- name: danu01_Streaming_LiveCtn01
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: d1030ea7-170a-46a2-8e50-6c571023ea69
+  udp: true
+  sni: sg-ctn.sshpremium.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: sg-ctn.sshpremium.my.id
